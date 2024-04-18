@@ -152,7 +152,7 @@ the toplevel widget that holds everything
 | anchor | `string[]` | Valid values are `"top"`, `"bottom"`, `"left"`, `"right"`. Anchor points of the window. Leave it empty to make it centered. |
 | exclusivity | `string` | Specify if the compositor should reserve space for the window automatically or how the window should interact with windows that do. Possible values: `exclusive` (space should be reserved), `normal` (the window should move if occluding another), `ignore` (the window should not be moved). Default: `normal`. |
 | layer | `string` | Valid values are `"overlay"`, `"top"`, `"bottom"`, `"background"`. It is `"top"` by default. |
-| margins | `number[]` | Corresponds to CSS notation, e.g `[0, 6]` would have 0 margin on the top and bottom and would have 6 on the right and left. |
+| margins | `number[]` | Corresponds to CSS notation, e.g `[0, 6]` would have 0 margin on the top and bottom and would have 6 on the right and left. Also can be used in such way: `[1, 2, 3, 4]` where 1 is top margin, 2 is right, 3 is bottom and 4 is left |
 | monitor | `number` | Which monitor to show the window on. If it is left undefined the window will show on the currently focused monitor. |
 | keymode | `string` | Valid values are `"none"`, `"on-demand"`: can receive keyboard input if focused, `"exclusive"`: steal keyboard input on top and overlay layers |
 | gdkmonitor | `Gdk.Monitor` | alternative to `monitor` |
